@@ -12,4 +12,7 @@ links = LinkHeader.parse(links_header_string)
 
 p links.to_h
 => {"next"=>"4", "last"=>"5", "first"=>"1", "prev"=>"2"}
+
+links[:next] or links["next"]
+=> "4"
 ```
